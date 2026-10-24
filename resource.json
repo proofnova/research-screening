@@ -65,18 +65,22 @@
       "Korean"
     ],
     "queries": [
-      "Research screening ledger",
-      "research screening",
-      "논문 중복·메타데이터·선정 규칙을 처리하고 누락 자료와 검토 불일치를 분리한다.",
-      "asreview",
-      "zotero"
+      "systematic review screening missing metadata DOI duplicates 연구 선정"
     ],
     "scope": "Primary documentation and repository descriptions were read on the public web. Competitor code, plugins and packaged execution were not exhaustively tested. This is a bounded prior-art review, not a worldwide novelty search.",
     "limitations": [
       "Search results and documentation do not establish universal absence.",
       "Competitor configuration/plugin parity is not exhausted.",
       "No independent end-user interview or deployment evidence."
-    ]
+    ],
+    "proposed_queries": [
+      "Research screening ledger",
+      "research screening",
+      "논문 중복·메타데이터·선정 규칙을 처리하고 누락 자료와 검토 불일치를 분리한다.",
+      "asreview",
+      "zotero"
+    ],
+    "query_scope": "One actual bilingual search per resource, grouped in shared cached batches; additional suggested terms are explicitly proposed, not executed."
   },
   "checked_at": "2026-10-24",
   "distinctive_capability": "Three-valued screening rules, DOI grouping and explicit reviewer agreement arithmetic. An offline executable can be called by a small model and checked against an explicit task contract.",
@@ -102,7 +106,8 @@
   "validation_results": {
     "worked_cases": 1,
     "evaluation_cases": 1,
-    "root_required_field_rejection": true
+    "root_required_field_rejection": true,
+    "fixture_role": "Development regression fixtures; not an untouched final model evaluation set."
   },
   "external_impact_evidence": [],
   "decision": {
